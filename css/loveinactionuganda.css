@@ -1,0 +1,73 @@
+body {
+  background-color: #eee;
+}
+body, .pure-g-r [class *= "pure-u"] {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #781800;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+img#schoolchildren {
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+  left: -40px;
+  width: 110%;
+  -webkit-filter: blur(8px);
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 900px;
+  min-height: 1vh;
+}
+
+#branding {
+  background-image: url('../img/schoolchildren2.jpg');
+  background-position: 0 -160px;
+  min-height: 240px;
+}
+#branding h1 {
+  display: inline-block;
+  margin: 40px 40px 40px 36px;
+  background-color: #781800;
+  color: #eee;
+  font-weight: normal;
+  padding: 4px 6px;
+}
+
+.pure-menu.pure-menu-horizontal {
+  background-color: #eee;
+  padding-left: 20px;
+}
+.pure-menu a {
+  color: #781800;
+}
+.pure-menu a:hover, .pure-menu a:focus {
+  text-decoration: underline;
+}
+
+section {
+  background-color: #781800;
+  color: #eee;
+}
+section.even {
+  background-color: #eee;
+  color: #333;
+}
+section h2 {
+  margin: 30px 40px 0 40px;
+  font-weight: normal;
+}
+section p {
+  margin: 20px 40px 0 40px;
+}
+section p:last-child {
+  margin-bottom: 30px;
+}
