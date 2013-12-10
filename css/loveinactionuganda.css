@@ -1,5 +1,8 @@
 body {
-  background-color: #eee;
+  background-image: url('../img/schoolchildren-blurred.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body, .pure-g-r [class *= "pure-u"] {
   font-family: Helvetica, Arial, sans-serif;
@@ -13,14 +16,15 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-img#schoolchildren {
-  position: absolute;
+/* to be replaced with a blurred bg image... */
+/*img#schoolchildren {
+  position: fixed;
   z-index: -1;
   top: -40px;
   left: -40px;
   width: 110%;
   -webkit-filter: blur(8px);
-}
+}*/
 
 #container {
   margin: 0 auto;
@@ -65,9 +69,15 @@ section h2 {
   margin: 30px 40px 0 40px;
   font-weight: normal;
 }
+section h3 {
+  margin: 30px 40px 0 40px;
+}
 section p {
   margin: 20px 40px 0 40px;
 }
-section p:last-child {
+section p:last-child, section img:last-child {
   margin-bottom: 30px;
+}
+section img {
+  padding: 20px 40px 0 40px;
 }
