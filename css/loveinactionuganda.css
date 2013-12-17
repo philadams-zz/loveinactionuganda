@@ -34,16 +34,17 @@ a:hover, a:focus {
 
 #branding {
   background-image: url('../img/schoolchildren2.jpg');
-  background-position: 0 -160px;
+  background-position: 0 -180px;
   min-height: 240px;
 }
 #branding h1 {
   display: inline-block;
-  margin: 40px 40px 40px 36px;
+  margin: 20px 40px 0px 36px;
   background-color: #781800;
   color: #eee;
   font-weight: normal;
   padding: 4px 6px;
+  font-size: 2.6em;
 }
 
 .pure-menu.pure-menu-horizontal {
@@ -52,6 +53,7 @@ a:hover, a:focus {
 }
 .pure-menu a {
   color: #781800;
+  font-weight: bold;
 }
 .pure-menu a:hover, .pure-menu a:focus {
   text-decoration: underline;
@@ -71,4 +73,26 @@ section.even {
 }
 section h2 {
   font-weight: normal;
+}
+
+/* tweaks for small media */
+@media (max-width: 768px) {
+  body {
+    background-image: none;
+  }
+  #container {
+    margin: 0 auto;
+  }
+  #branding h1 {
+    margin: 0;
+    padding: 4px 10px 4px 20px;
+    display: block;
+    font-size: 2em;
+  }
+  .l-box {
+    padding: 20px;
+  }
+  .pure-menu.pure-menu-horizontal {
+    padding-left: 0;
+  }
 }
