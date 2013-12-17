@@ -10,10 +10,13 @@ body, .pure-g-r [class *= "pure-u"] {
 
 a {
   color: #781800;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover, a:focus {
-  text-decoration: underline;
+  text-decoration: none;
+}
+address {
+  font-style: normal;
 }
 
 /* to be replaced with a blurred bg image... */
@@ -39,12 +42,19 @@ a:hover, a:focus {
 }
 #branding h1 {
   display: inline-block;
-  margin: 20px 40px 0px 36px;
+  margin: 20px 40px 0px 40px;
   background-color: #781800;
   color: #eee;
   font-weight: normal;
   padding: 4px 6px;
   font-size: 2.6em;
+}
+#branding h1 a {
+  color: #eee;
+  text-decoration: none;
+}
+#branding h1 a:hover, #branding h1 a:focus {
+  text-decoration: none;
 }
 
 .pure-menu.pure-menu-horizontal {
@@ -67,12 +77,18 @@ section {
   background-color: #781800;
   color: #eee;
 }
+section a {
+  color: #eee;
+}
+section h2 {
+  font-weight: normal;
+}
 section.even {
   background-color: #eee;
   color: #333;
 }
-section h2 {
-  font-weight: normal;
+section.even a {
+  color: #781800;
 }
 
 /* tweaks for small media */
